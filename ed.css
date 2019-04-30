@@ -17,11 +17,6 @@
     padding-top: 100px;
     z-index: -1;
   }
-  p{
-    position: relative;
-    align-content: center;
-    height: 90vh;
-  }
   
   nav {
     height: 10vh;
@@ -56,11 +51,12 @@
     width: fit-content;
   }
 
-  .drop-shadow{
+  .yes{
     -webkit-box-shadow: 0px 9px 28px -3px rgba(5,4,5,0.61);
     -moz-box-shadow: 0px 9px 28px -3px rgba(5,4,5,0.61);
     box-shadow: 0px 9px 28px -3px rgba(5,4,5,0.61);
   }
+
   
   .nav-links {
     display: flex;
@@ -93,6 +89,8 @@
     transition: width 0.3s;
 
   }
+
+
 
   li a{
     display: inline-block;
@@ -141,23 +139,66 @@
 }*/
 footer{
   background-color: black;
+
 }
 .footer-content{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-  height: 100px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  height: 300px;
 }
 .col h1{
-  font-size: 18px;
-  color: lightgrey;
+  font-size: 20px;
+  color: navajowhite;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+}
+
+.col p{
+  font-size: 14px;
+  color: white;
+  font-weight: lighter;
 }
 .footer-bottom{
   background-color: #EDC9AF;
   text-align: center;
 }
 
+.col i{
+  padding: 10px 7px 5px 0px;
+}
+.fa-envelope{
+  font-size: 20px;
+}
 
+.fa-map-marker-alt{
+  font-size: 20px;
+}
+
+
+.fa-phone{
+  font-size: 20px;
+}
+
+.fa-globe{
+  font-size: 20px;
+}
+
+.fa-youtube{
+  color: red;
+  font-size: 50px;
+}
+
+.fa-facebook{
+  color: #3b5998;
+  font-size: 50px;
+}
+
+.fa-twitter-square{
+  color: #00acee;
+  font-size: 50px;
+}
 
 
 
@@ -204,6 +245,23 @@ footer{
       clip-path: circle(1600px at 90% -20%);
       -webkit-clip-path: circle(1600px at 90% -20%);
       pointer-events: all;
+    }
+
+    .col p{
+      font-size: 10px;
+      color: white;
+      font-weight: lighter;
+
+    }
+    .col i{
+      padding: 10px 7px 5px 0px;
+    }
+    .fa-envelope ,.fa-map-marker-alt ,.fa-phone ,.fa-globe{
+      font-size: 10px;
+    }
+
+    .fa-youtube ,.fa-facebook ,.fa-twitter-square{
+      font-size: 30px;
     }
     
     .nav-links li {

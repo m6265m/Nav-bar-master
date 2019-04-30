@@ -13,15 +13,17 @@ window.addEventListener("scroll", () =>{
   const top = document.getElementById("move");
   const ypos = window.pageYOffset;
 
-  if(ypos > 100){
+  if(ypos > 10){
     top.classList.add("nav-colored");
-    top.classList.add("drop-shadow");
+    top.classList.add("yes");
     top.classList.remove("nav-transparent");
+
   }
   else{
     top.classList.add("nav-transparent");
     top.classList.remove("nav-colored");
-    top.classList.remove("drop-shadow");
+    top.classList.remove("yes");
+
   }
 });
 
